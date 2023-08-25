@@ -36,7 +36,10 @@ export default function Home() {
 	return (
 		<div className='flex flex-row-reverse flex-wrap justify-center'>
 			{data.map((item, index) => (
-				<AdCard item={item} />
+				<AdCard
+					item={item}
+					key={index}
+				/>
 			))}
 		</div>
 	);
